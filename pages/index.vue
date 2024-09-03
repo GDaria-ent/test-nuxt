@@ -1,10 +1,4 @@
 <script setup lang="ts">
-interface Post {
-  title: string;
-  content: string;
-  image: string;
-  id: number;
-}
 const timeStamp = ref<string | null>(null);
 const postsList = ref<[] | null>([]);
 const minRange = ref<number>(0);
