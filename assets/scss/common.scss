@@ -1,0 +1,46 @@
+html,
+body,
+#__nuxt,
+#__layout {
+  height: 100%;
+}
+
+body {
+  @apply text-base-strong font-regular;
+}
+
+*,
+::before,
+::after {
+  @apply border-faint;
+}
+
+:focus-visible {
+  @apply outline-none;
+}
+
+button {
+  @apply rounded-lg bg-accent px-3 py-2;
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    @apply opacity-50;
+  }
+  &:not([disabled]):hover {
+    @apply bg-accent-strong transition-colors duration-300;
+  }
+}
+
+input,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.container--wide {
+  max-width: 1760px;
+}
